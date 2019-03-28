@@ -263,4 +263,14 @@ module.exports = {
         // 'class-methods-use-this': ['error'],	        //	enforce that class methods utilize this
         // 'no-invalid-this': ['error'],			    //	disallow this keywords outside of classes or class-like objects
     },
+    overrides: [{
+        files: [
+            '*.spec.*',
+            '*.test.*',
+            '*-test.*',
+        ],
+        rules: {
+            'prefer-arrow-callback': 'off',
+        }
+    }],
 };
