@@ -194,8 +194,6 @@ module.exports = {
         'no-prototype-builtins': ['error'], //	disallow calling some Object.prototype methods directly on objects
         eqeqeq: ['error'], //	require the use of === and !==
 
-        'no-only-tests/no-only-tests': ['error'], // prevent committing tests with .only which would disable all other tests in that file
-
         // intentionally disabled checks
         'no-warning-comments': 'off', //	disallow specified warning terms in comments
         complexity: 'off', //	enforce a maximum cyclomatic complexity allowed in a program, leave this up to the developer
