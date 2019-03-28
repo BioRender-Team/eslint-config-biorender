@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-biorender",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Shareable ESLint config for BioRender",
   "main": "index.js",
   "scripts": {
