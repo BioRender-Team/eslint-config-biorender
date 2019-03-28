@@ -3,16 +3,13 @@ module.exports = {
         browser: true, // we are targeting browser environments
         es6: true, // we use es6
         node: true, // we use node
-        'cypress/globals': true,
     },
     extends: [
         'eslint:recommended',
         'plugin:prettier/recommended',
-        'plugin:cypress/recommended',
     ],
     plugins: [
         'prettier',
-        'eslint-plugin-cypress',
     ],
     rules: {
         // enabled checks
