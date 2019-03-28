@@ -8,20 +8,13 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:prettier/recommended',
-        'plugin:react/recommended',
         'plugin:cypress/recommended',
     ],
     plugins: [
         'prettier',
-        'react',
         'eslint-plugin-cypress',
         'no-only-tests',
     ],
-    settings: {
-        react: {
-            version: 'detect',
-        },
-    },
     rules: {
         // enabled checks
         'no-cond-assign': ['error'], //	disallow assignment operators in conditional expressions
@@ -202,27 +195,6 @@ module.exports = {
         'no-prototype-builtins': ['error'], //	disallow calling some Object.prototype methods directly on objects
         eqeqeq: ['error'], //	require the use of === and !==
 
-        // react
-        'react/jsx-uses-vars': 2, // indicate that react will use vars, this will prevent vars being marked unused while they are being used by react/JSX
-        'react/no-unescaped-entities': ['error'],
-        'react/jsx-key': ['error'],
-        'react/jsx-no-undef': ['error'],
-        'react/display-name': ['error'],
-        'react/no-string-refs': ['error'],
-        'react/no-find-dom-node': ['error'],
-        'react/jsx-boolean-value': ['error', 'always'],
-        'react/jsx-filename-extension': ['error'],
-        'react/button-has-type': ['error'], // Forbid "button" element without an explicit "type" attribute
-        'react/no-redundant-should-component-update': ['error'],
-        'react/prefer-es6-class': ['error', 'always'], // Enforce ES5 or ES6 class for React Components
-        'react/no-render-return-value': ['error'], // Prevent usage of the return value of React.render
-        'react/no-typos': ['error'], //: Prevent common casing typos
-        'react/no-this-in-sfc': ['error'], // Prevent using this in stateless functional components
-        'react/no-unused-prop-types': ['error'], // Prevent definitions of unused prop types
-        'react/style-prop-object': ['error'], // Enforce style prop value being an object
-        'react/jsx-pascal-case': ['error', { allowAllCaps: true }], // Enforce PascalCase for user-defined JSX components
-        'react/no-will-update-set-state': ['error'], // Prevent usage of setState in componentWillUpdate
-
         'no-only-tests/no-only-tests': ['error'], // prevent committing tests with .only which would disable all other tests in that file
 
         // intentionally disabled checks
@@ -284,26 +256,14 @@ module.exports = {
         'no-class-assign': 'off', // ['error'], //	disallow reassigning class members *** note we re-assign classes all the time using connect or onClickOutside for instance
         'default-case': 'off', //	require default cases in switch statements. We don't always need a default action, since they could be handled outside the switch statement
 
-        // react
-        'react/jsx-no-target-blank': 'off', // we don't have user content that can generate links at the moment and most of the errors will be us referring to our own pages
-        'react/prop-types': 'off', // keep this disabled as we have too many of these and switching to typescript will fix this
-
         // temporary disabled checks
         'no-console': 'off', // ['error'],	//	disallow the use of console, enable this once we have a console replacement
         'no-process-env': 'off', //	disallow the use of process.env, we should make a config file for environment variables, when that is done enable this rule
         'consistent-return': 'off', //	require return statements to either always or never specify values, needs looking into, for now disable
         'no-magic-numbers': 'off', // ['error', { "ignore" : [0, 1], enforceConst: true }], //	disallow magic numbers, might revisit in future but currently there are too many
-        'react/no-multi-comp': 'off', // we should enable this at some point
-        'react/no-unsafe': 'off', // we should enable this after we refactor our stuff
-        'react/require-optimization': 'off', // Enforce React components to have a shouldComponentUpdate method // do this when we want to optimize for speed
-        'react/no-unused-state': 'off', // Prevent definitions of unused state properties // maybe later to risky right now
 
         // remarked checks
         // 'class-methods-use-this': ['error'],	        //	enforce that class methods utilize this
         // 'no-invalid-this': ['error'],			    //	disallow this keywords outside of classes or class-like objects
-        // 'react/jsx-no-bind': [                       // this check will flag too many items that would need some redesign to fix, it has no option for ignoring bind with additional attributes
-        //     'error',
-        //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
-        // ],
     },
 };
