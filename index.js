@@ -13,7 +13,6 @@ module.exports = {
     plugins: [
         'prettier',
         'eslint-plugin-cypress',
-        'no-only-tests',
     ],
     rules: {
         // enabled checks
