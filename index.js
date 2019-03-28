@@ -265,6 +265,8 @@ module.exports = {
             '*.spec.*',
             '*.test.*',
             '*-test.*',
+            'test_*',
+            'spec_*',
         ],
         rules: {
             'prefer-arrow-callback': 'off',
