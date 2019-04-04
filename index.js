@@ -166,7 +166,7 @@ module.exports = {
         'prefer-rest-params': ['error'], //	require rest parameters instead of arguments
         'no-implicit-coercion': ['error', { boolean: false, number: true, string: false }], //	auto fixable disallow shorthand type conversions
         'no-unused-vars': ['error'], //	disallow unused variables
-        'no-use-before-define': ['error'], //	disallow the use of variables before they are defined
+        'no-use-before-define': ['error', { "functions": false }], // disallow the use of variables before they are defined
         'no-undef': ['error'], //	disallow the use of undeclared variables unless mentioned in /*global */ comments
         'spaced-comment': ['error', 'always'], //	auto fixable enforce consistent spacing after the // or /* in a comment
         'arrow-body-style': ['error', 'as-needed'], //	require braces around arrow function bodies
