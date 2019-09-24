@@ -259,6 +259,8 @@ module.exports = {
         // remarked checks
         // 'class-methods-use-this': ['error'],	        //	enforce that class methods utilize this
         // 'no-invalid-this': ['error'],			    //	disallow this keywords outside of classes or class-like objects
+
+        'require-atomic-updates': 'off',
     },
     overrides: [{
         files: [
