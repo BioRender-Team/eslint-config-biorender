@@ -6,6 +6,7 @@ module.exports = {
     extends: 'plugin:react/recommended',
     plugins: [
         'react',
+        'react-hooks',
     ],
     settings: {
         react: {
@@ -49,5 +50,9 @@ module.exports = {
         //     'error',
         //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
         // ],
+
+        // react-hooks
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
     },
 };
