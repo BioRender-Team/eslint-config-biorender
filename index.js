@@ -1,4 +1,5 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
     env: {
         browser: true, // we are targeting browser environments
         es6: true, // we use es6
@@ -7,9 +8,11 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:prettier/recommended',
+        'plugin:@typescript-eslint/recommended',
     ],
     plugins: [
         'prettier',
+        '@typescript-eslint',
     ],
     rules: {
         // enabled checks

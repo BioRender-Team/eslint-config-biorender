@@ -1,4 +1,5 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
     env: {
         browser: true, // we are targeting browser environments
         es6: true, // we use es6
@@ -7,6 +8,7 @@ module.exports = {
     plugins: [
         'react',
         'react-hooks',
+        '@typescript-eslint',
     ],
     settings: {
         react: {

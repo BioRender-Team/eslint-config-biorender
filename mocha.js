@@ -1,10 +1,12 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
     env: {
         node: true, // we use node
         mocha: true, // we use mocha
     },
     plugins: [
         'mocha',
+        '@typescript-eslint',
     ],
     rules: {
         'mocha/no-exclusive-tests': 'error',
