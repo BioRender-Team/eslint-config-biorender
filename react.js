@@ -5,7 +5,7 @@ module.exports = {
     },
     extends: [
         'plugin:react/recommended',
-        'plugin:jsx-a11y/recommend'
+        'plugin:jsx-a11y/recommended'
     ],
     plugins: [
         'react',
