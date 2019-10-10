@@ -3,9 +3,13 @@ module.exports = {
         browser: true, // we are targeting browser environments
         es6: true, // we use es6
     },
-    extends: 'plugin:react/recommended',
+    extends: [
+        'plugin:react/recommended',
+        'plugin:jsx-a11y/recommend'
+    ],
     plugins: [
         'react',
+        'jsx-a11y',
     ],
     settings: {
         react: {
@@ -49,12 +53,5 @@ module.exports = {
         //     'error',
         //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
         // ],
-        'jsx-a11y/alt-text': [2, {
-            elements: ['img', 'object', 'area', 'input[type="image"]'],
-            img: ['Image'],
-            object: ['Object'],
-            area: ['Area'],
-            'input[type="image"]': ['InputImage'],
-        }],
     },
 };
