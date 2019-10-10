@@ -49,5 +49,12 @@ module.exports = {
         //     'error',
         //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
         // ],
+        'jsx-a11y/alt-text': [2, {
+            elements: ['img', 'object', 'area', 'input[type="image"]'],
+            img: ['Image'],
+            object: ['Object'],
+            area: ['Area'],
+            'input[type="image"]': ['InputImage'],
+        }],
     },
 };
