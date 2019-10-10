@@ -5,6 +5,7 @@ module.exports = {
     },
     extends: [
         'plugin:react/recommended',
+        'plugin:jsx-a11y/recommended',
     ],
     plugins: [
         'react',
@@ -52,6 +53,5 @@ module.exports = {
         //     'error',
         //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
         // ],
-        'jsx-a11y/alt-text': 2,
     },
 };
