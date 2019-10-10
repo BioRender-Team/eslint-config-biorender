@@ -53,5 +53,6 @@ module.exports = {
         //     'error',
         //     { ignoreRefs: true, allowArrowFunctions: true, ignoreDOMComponents: true },
         // ],
+        'jsx-a11y/alt-text': 2,
     },
 };
