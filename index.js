@@ -1,12 +1,11 @@
 module.exports = {
-    env: {
-        browser: true, // we are targeting browser environments
-        es6: true, // we use es6
-        node: true, // we use node
-    },
+    parser: '@typescript-eslint/parser',
     extends: [
         'eslint:recommended',
-        'plugin:prettier/recommended',
+        "prettier",
+        "prettier/@typescript-eslint",
+        "prettier/babel",
+        "prettier/react",
     ],
     plugins: [
         'prettier',

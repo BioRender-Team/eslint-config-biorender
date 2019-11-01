@@ -1,8 +1,4 @@
 module.exports = {
-    env: {
-        browser: true, // we are targeting browser environments
-        es6: true, // we use es6
-    },
     extends: [
         'plugin:react/recommended',
         'plugin:jsx-a11y/recommended',
