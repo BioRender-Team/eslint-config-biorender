@@ -2,6 +2,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     extends: [
         'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
         "prettier",
         "prettier/@typescript-eslint",
         "prettier/babel",
@@ -21,7 +23,7 @@ module.exports = {
         'no-duplicate-case': ['error'], //	disallow duplicate case labels
         'no-empty-character-class': ['error'], //	disallow empty character classes in regular expressions
         'no-empty': ['error'], //	disallow empty block statements
-        'no-ex-assign': ['error'], //	disallow reassigning exceptions in catch clauses
+        'no-ex-assign': ['error'], //	disalwlow reassigning exceptions in catch clauses
         'no-extra-boolean-cast': ['error'], //	disallow unnecessary boolean casts
         'no-extra-parens': ['error', 'functions'], //	auto fixable disallow unnecessary parentheses
         'no-extra-semi': ['error'], //	auto fixable disallow unnecessary semicolons
