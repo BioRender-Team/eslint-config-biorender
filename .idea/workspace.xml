@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9512fbdc-ba6a-42de-b62c-dc3c96a6f2cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/react.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +32,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="add-typescript-and-jest" />
-                    <option name="lastUsedInstant" value="1598470398" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1598476115" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1598470397" />
+                    <option name="branchName" value="add-typescript-and-jest" />
+                    <option name="lastUsedInstant" value="1598470398" />
                   </RecentBranch>
                 </list>
               </option>
@@ -82,7 +85,7 @@
       <updated>1570729270851</updated>
       <workItem from="1570729272506" duration="3531000" />
       <workItem from="1598468733450" duration="1100000" />
-      <workItem from="1598470139359" duration="3141000" />
+      <workItem from="1598470139359" duration="4135000" />
     </task>
     <servers />
   </component>
