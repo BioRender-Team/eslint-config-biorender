@@ -26,7 +26,7 @@ module.exports = {
         'react/no-string-refs': ['error'],
         'react/no-find-dom-node': ['error'],
         'react/jsx-boolean-value': ['error', 'always'],
-        'react/jsx-filename-extension': ['error'],
+        'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
         'react/button-has-type': ['error'], // Forbid "button" element without an explicit "type" attribute
         'react/no-redundant-should-component-update': ['error'],
         'react/prefer-es6-class': ['error', 'always'], // Enforce ES5 or ES6 class for React Components
