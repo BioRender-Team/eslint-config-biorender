@@ -12,7 +12,7 @@
 
 1. Install eslint `npm install --save-dev eslint`
 
-2. Install BioRender eslint config `npm install --save-dev BioRender-Team/eslint-config-biorender#vX.Y.Z` 
+2. Install BioRender eslint config `npm install --save-dev BioRender-Team/eslint-config-biorender#vX.Y.Z`
 
     * Replace `vX.Y.Z` with the latest version. (e.g. `v1.0.0`)
 
@@ -47,22 +47,22 @@
 
         Run `npm install --save-dev babel-eslint`
 
-    * For example, if you use Mocha in the `test` folder, create `test/.eslintrc.js`
+    * For example, if you use Jest enable jest by adding`
         with:
-        
+
         ```js
         /* eslint-disable */
         module.exports = {
             extends: [
                 'biorender',
-                'biorender/mocha',
+                'biorender/jest',
             ],
         };
         ```
 
     * If you use Cypress in the `cypress` folder, create `cypress/.eslintrc.js`
         with:
-        
+
         ```js
         /* eslint-disable */
         module.exports = {
