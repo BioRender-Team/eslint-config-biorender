@@ -173,7 +173,7 @@ module.exports = {
         'consistent-this': ['error', '_this'], //	enforce consistent naming when capturing the current execution context
         'no-eq-null': ['error'], //	disallow null comparisons without type-checking operators
         'prefer-arrow-callback': ['error'], //	auto fixable require arrow functions as callbacks
-        'id-length': ['error', { min: 2, exceptions: ['x', 'y', 'z', '_', 'r', 'g', 'b'] }], //	enforce minimum and maximum identifier lengths
+        'id-length': ['error', { min: 2, exceptions: ['x', 'y', 'z', '_', 'r', 'g', 'b', 'a'] }], //	enforce minimum and maximum identifier lengths
         'vars-on-top': ['error'], //	require var declarations be placed at the top of their containing scope
         'no-alert': ['error'], //	disallow the use of alert, confirm, and prompt
         'no-div-regex': ['error'], //	disallow division operators explicitly at the beginning of regular expressions
